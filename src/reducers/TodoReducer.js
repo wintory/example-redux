@@ -7,10 +7,9 @@ const initialState = {
 }
 
 export default function TodoReducer(state=initialState,action){
-    
     switch(action.type){
         case ADD_TEXT : return ({...state,text:action.text})
-        case ADD_TODO : return ({...state,data:[...state.data,{id:action.id,data:action.data}]})
+        case ADD_TODO : return ({...state,data:[...state.data,{id:action.id,data:action.data,text:''}]})
         default :return state
     }
 }

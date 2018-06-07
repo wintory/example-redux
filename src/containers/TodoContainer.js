@@ -3,8 +3,9 @@ import {addTodo,completeTodo,addText} from '../actions/ManageTodo'
 import TodoList from '../components/TodoList'
 
 const mapStateToProps=state => {
-    return {count : state.todoredu.count,
-            text : state.todoredu.text
+    return {
+            text : state.todoredu.text,
+            data:state.todoredu.data
     }
   }
   
