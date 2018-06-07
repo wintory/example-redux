@@ -1,9 +1,10 @@
-export function addCount(val){
+
+
+export const addCount=(val)=>{
     return {type:'ADD',count:val}
 }
 
-export function deleteCount(val){
+export const deleteCount=(val)=>{
     return{type:'DELETE',count:val}
 }
 
-export default addCount

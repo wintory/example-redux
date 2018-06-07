@@ -1,12 +1,13 @@
-import React, { Component } from 'react';
-
+import React from 'react';
 
 const Att =(props)=>{
-    return<div><button onClick={()=>props.addCount(1)}>add</button>
-            <button onClick={()=>props.deleteCount(1)}>add</button>
+    return<div>
             <p className="App-intro">
             count : {props.count}
-            </p></div>}
+            </p>
+            <button onClick={()=>props.addCount(1)}>add</button>
+            <button onClick={()=>props.deleteCount(1)}>delete</button>
+            </div>}
 
 
 export default Att
