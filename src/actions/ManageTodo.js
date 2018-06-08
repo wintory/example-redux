@@ -3,7 +3,7 @@ export const COMPLETE_TODO = 'COMPLETE_TODO'
 export const ADD_TEXT = 'ADD_TEXT'
 
 export const addTodo = (data)=>{
-    return {type:ADD_TODO,data:data,id:data+parseInt(Math.random()*100000)}
+    return {type:ADD_TODO,data:data,id:data.substr(1,4)+parseInt(Math.random()*100000)}
 }
 
 export const addText = (text)=>{

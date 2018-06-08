@@ -9,6 +9,8 @@ class App extends Component {
       <div className="App">
       <h1>Count App</h1>
       <CountContainer/>
+      <br/>
+      <br/>
       <h1>Todo List</h1>
       <TodoContainer/>
       <br/>
